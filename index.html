@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOHAN HARI G - Portfolio</title>
+    <title>Your Name - Portfolio</title>
     <style>
+        /* Reset and base styles */
         * {
             margin: 0;
             padding: 0;
@@ -14,7 +15,7 @@
             font-family: Arial, sans-serif;
             line-height: 1.6;
             color: #333;
-            background-color: #f0f8ff; 
+            background-color: #f0f8ff; /* Light blue background */
             background-image: url('https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
             background-size: cover;
             background-attachment: fixed;
@@ -27,6 +28,8 @@
             margin: 0 auto;
             padding: 0 20px;
         }
+
+        /* Header styles */
         header {
             background-color: rgba(255, 255, 255, 0.9);
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -50,6 +53,8 @@
             color: #2b6cb0;
             transform: translateY(-2px);
         }
+
+        /* Main content styles */
         main {
             padding: 2rem 0;
         }
@@ -99,10 +104,10 @@
             transform: translateY(-2px);
         }
         #about {
-            background-color: rgba(230, 255, 250, 0.9); 
+            background-color: rgba(230, 255, 250, 0.9); /* Light mint green */
         }
         #skills {
-            background-color: rgba(235, 248, 255, 0.9); 
+            background-color: rgba(235, 248, 255, 0.9); /* Light sky blue */
         }
         .skills-grid {
             display: grid;
@@ -123,7 +128,7 @@
             background-color: #fff;
         }
         #contact {
-            background-color: rgba(250, 245, 255, 0.9); 
+            background-color: rgba(250, 245, 255, 0.9); /* Light lavender */
         }
         .contact-buttons {
             display: grid;
@@ -174,17 +179,37 @@
         .contact-btn:hover .icon {
             transform: scale(1.2) rotate(360deg);
         }
+
+        #photo {
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        #photo img {
+            transition: transform 0.3s ease;
+        }
+
+        #photo img:hover {
+            transform: scale(1.05);
+        }
+
+
+        /* Footer styles */
         footer {
             background-color: rgba(255, 255, 255, 0.9);
             padding: 1rem 0;
             text-align: center;
             margin-top: 2rem;
         }
+
+        /* Responsive adjustments */
         @media (max-width: 768px) {
             .contact-buttons {
                 grid-template-columns: 1fr;
             }
         }
+
+        /* Animation keyframes */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -195,6 +220,8 @@
                 transform: translateY(0);
             }
         }
+
+        /* Apply animations to sections */
         section {
             animation: fadeInUp 0.6s ease-out;
         }
@@ -203,7 +230,7 @@
 <body>
     <header>
         <nav class="container">
-            <a href="#" style="font-weight: bold;">MOHAN HARI G</a>
+            <a href="#" style="font-weight: bold;">Your Name</a>
             <div>
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
@@ -214,17 +241,18 @@
 
     <main class="container">
         <section class="hero">
-            <h1>MOHAN HARI G</h1>
-            <p>Web Developer | Programmer | Creative Thinker</p>
+            <div id="photo">
+                <img src="my_photo.jpg" alt="Your Name" style="width: 150px; height: 150px; border-radius: 50%; margin-bottom: 1rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            </div>
+            <h1>Your Name</h1>
+            <p>Web Developer | Designer | Creative Thinker</p>
             <a href="#contact" class="btn">Contact Me</a>
         </section>
 
         <section id="about">
             <h2>About Me</h2>
-            <img src="./my_photo.jpg" alt="MOHAN HARI G" style="width: 100px; border-radius: 50%; margin-bottom: 1rem;">
-            <p>A proactive and results-driven individual with a strong ability to identify areas for improvement and implement effective solutions. Known for delivering quality work under tight deadlines and maintaining a high level of attention to detail in fast-paced environments.</p>  
+            <p>I'm a passionate web developer with a keen eye for design and a love for creating intuitive, user-friendly interfaces. With a background in [Your Background], I bring a unique perspective to every project I work on.</p>
         </section>
-        
 
         <section id="skills">
             <h2>Skills</h2>
@@ -259,8 +287,9 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
+            <p>&copy; 2024 MOHAN HARI G. All rights reserved.</p>
         </div>
     </footer>
 </body>
 </html>
+
